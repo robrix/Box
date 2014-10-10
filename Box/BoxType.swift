@@ -11,3 +11,8 @@ public protocol BoxType {
 	/// The wrapped value.
 	var value: Value { get }
 }
+
+public protocol MutableBoxType: BoxType {
+	/// The (mutable) wrapped value.
+	var value: Value { get set }
+}
