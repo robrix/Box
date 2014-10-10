@@ -20,3 +20,7 @@ public final class Box<T> {
 func == <T: Equatable> (lhs: Box<T>, rhs: Box<T>) -> Bool {
 	return lhs.value == rhs.value
 }
+
+func != <T: Equatable> (lhs: Box<T>, rhs: Box<T>) -> Bool {
+	return lhs.value != rhs.value
+}
