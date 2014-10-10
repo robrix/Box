@@ -11,6 +11,7 @@
 		D470AC4319E86128003DA6C6 /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D470AC3719E86128003DA6C6 /* Box.framework */; };
 		D470AC4A19E86128003DA6C6 /* BoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D470AC4919E86128003DA6C6 /* BoxTests.swift */; };
 		D470AC5619E861E2003DA6C6 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = D470AC5519E861E2003DA6C6 /* Box.swift */; };
+		D470AC5819E86790003DA6C6 /* BoxType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D470AC5719E86790003DA6C6 /* BoxType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		D470AC4819E86128003DA6C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D470AC4919E86128003DA6C6 /* BoxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxTests.swift; sourceTree = "<group>"; };
 		D470AC5519E861E2003DA6C6 /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		D470AC5719E86790003DA6C6 /* BoxType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			children = (
 				D470AC3C19E86128003DA6C6 /* Box.h */,
 				D470AC5519E861E2003DA6C6 /* Box.swift */,
+				D470AC5719E86790003DA6C6 /* BoxType.swift */,
 				D470AC3A19E86128003DA6C6 /* Supporting Files */,
 			);
 			path = Box;
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D470AC5619E861E2003DA6C6 /* Box.swift in Sources */,
+				D470AC5819E86790003DA6C6 /* BoxType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +408,7 @@
 				D470AC4F19E86128003DA6C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D470AC5019E86128003DA6C6 /* Build configuration list for PBXNativeTarget "BoxTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +417,7 @@
 				D470AC5219E86128003DA6C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
