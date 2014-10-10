@@ -8,4 +8,10 @@ class MutableBoxTests: XCTestCase {
 		let box = MutableBox(1)
 		XCTAssertEqual(box.value, 1)
 	}
+
+	func testMutation() {
+		let box = MutableBox(1)
+		box.value = 2
+		XCTAssertEqual(box.value, 2)
+	}
 }
