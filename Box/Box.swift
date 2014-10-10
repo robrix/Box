@@ -12,3 +12,8 @@ public final class Box<T> {
 	/// The (immutable) value contained in this Box.
 	public let value: T
 }
+
+
+func == <T: Equatable> (lhs: Box<T>, rhs: Box<T>) -> Bool {
+	return lhs.value == rhs.value
+}
