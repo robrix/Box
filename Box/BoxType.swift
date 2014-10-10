@@ -17,3 +17,18 @@ public protocol MutableBoxType: BoxType {
 	/// The (mutable) wrapped value.
 	var value: Value { get set }
 }
+
+
+/// Equality of `BoxType`s of `Equatable` types.
+///
+/// We cannot declare that e.g. `Box<T: Equatable>` conforms to `Equatable`, so this is a relatively ad hoc definition.
+public func == <B: BoxType where B.Value: Equatable> (lhs: B, rhs: B) -> Bool {
+	return lhs.value == rhs.value
+}
+
+/// Inequality of `Box`es of `Equatable` types.
+///
+/// We cannot declare that e.g. `Box<T: Equatable>` conforms to `Equatable`, so this is a relatively ad hoc definition.
+public func != <B: BoxType where B.Value: Equatable> (lhs: B, rhs: B) -> Bool {
+	return lhs.value != rhs.value
+}
