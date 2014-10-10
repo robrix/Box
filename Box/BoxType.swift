@@ -1,6 +1,6 @@
 //  Copyright (c) 2014 Rob Rix. All rights reserved.
 
-/// The type conformed to by all `Box`es.
+/// The type conformed to by all boxes.
 public protocol BoxType {
 	/// The type of the wrapped value.
 	typealias Value
@@ -12,6 +12,7 @@ public protocol BoxType {
 	var value: Value { get }
 }
 
+/// The type conformed to by mutable boxes.
 public protocol MutableBoxType: BoxType {
 	/// The (mutable) wrapped value.
 	var value: Value { get set }
