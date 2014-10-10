@@ -12,3 +12,18 @@ public final class Box<T> {
 	/// The (immutable) value contained in this Box.
 	public let value: T
 }
+
+
+/// Equality of `Box`es of `Equatable` types.
+///
+/// We cannot declare that `Box<T: Equatable>` conforms to `Equatable`, so this is a relatively ad hoc definition.
+public func == <T: Equatable> (lhs: Box<T>, rhs: Box<T>) -> Bool {
+	return lhs.value == rhs.value
+}
+
+/// Inequality of `Box`es of `Equatable` types.
+///
+/// We cannot declare that `Box<T: Equatable>` conforms to `Equatable`, so this is a relatively ad hoc definition.
+public func != <T: Equatable> (lhs: Box<T>, rhs: Box<T>) -> Bool {
+	return lhs.value != rhs.value
+}
