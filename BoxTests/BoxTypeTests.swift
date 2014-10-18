@@ -15,4 +15,10 @@ class BoxTypeTests: XCTestCase {
 		XCTAssertFalse(a != b)
 		XCTAssertTrue(b != c)
 	}
+
+	func testMap() {
+		let a = Box(1)
+		let b = map(a, toString)
+		XCTAssertEqual(b.value, "1")
+	}
 }
