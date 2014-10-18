@@ -18,7 +18,7 @@ class BoxTypeTests: XCTestCase {
 
 	func testMap() {
 		let a = Box(1)
-		let b = map(a, toString)
+		let b: Box<String> = map(a, toString)
 		XCTAssertEqual(b.value, "1")
 	}
 }
