@@ -36,3 +36,11 @@ public func == <B: BoxType where B.Value: Equatable> (lhs: B, rhs: B) -> Bool {
 public func != <B: BoxType where B.Value: Equatable> (lhs: B, rhs: B) -> Bool {
 	return lhs.value != rhs.value
 }
+
+
+// MARK: Map
+
+/// Maps the value of a box into a new box.
+func map<B: BoxType, C: BoxType>(v: B, f: B.Value -> C.Value) -> C {
+	return C(f(v.value))
+}
