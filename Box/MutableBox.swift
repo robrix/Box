@@ -13,4 +13,9 @@ public final class MutableBox<T>: MutableBoxType {
 
 	/// The (mutable) value wrapped by the receiver.
 	public var value: T
+
+	/// Constructs a new MutableBox by transforming `value` by `f`.
+	public func map<U>(f: T -> U) -> MutableBox<U> {
+		return MutableBox<U>(f(value))
+	}
 }
