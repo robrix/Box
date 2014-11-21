@@ -3,7 +3,7 @@
 /// Wraps a type `T` in a reference type.
 ///
 /// Typically this is used to work around limitations of value types (for example, the lack of codegen for recursive value types and type-parameterized enums with >1 case). It is also useful for sharing a single (presumably large) value without copying it.
-public final class Box<T>: BoxType {
+public final class Box<T>: BoxType, Printable {
 	/// Initializes a `Box` with the given value.
 	public init(_ value: T) {
 		self.value = value
@@ -15,5 +15,12 @@ public final class Box<T>: BoxType {
 	/// Constructs a new Box by transforming `value` by `f`.
 	public func map<U>(f: T -> U) -> Box<U> {
 		return Box<U>(f(value))
+	}
+
+
+	// MARK: Printable
+
+	public var description: String {
+		return toString(value)
 	}
 }
