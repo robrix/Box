@@ -21,8 +21,7 @@ let value = box.value
 
 Changing the value of a `MutableBox`:
 
-```
-swift
+```swift
 // Mutation:
 let mutableBox = MutableBox(1)
 mutableBox.value = 2
