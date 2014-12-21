@@ -30,10 +30,10 @@ mutableBox.value = 2
 Building a recursive value type:
 
 ```swift
-struct BinaryTree<T> {
-	let value: T
-	let left: Box<BinaryTree<T>>?
-	let right: Box<BinaryTree<T>>?
+struct BinaryTree {
+	let value: Int
+	let left: Box<BinaryTree>?
+	let right: Box<BinaryTree>?
 }
 ```
 
