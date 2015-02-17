@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F8BB81D21A939B66001AA352"
-               BuildableName = "Box-iOS.framework"
+               BuildableName = "Box.framework"
                BlueprintName = "Box-iOS"
                ReferencedContainer = "container:Box.xcodeproj">
             </BuildableReference>
@@ -57,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F8BB81D21A939B66001AA352"
-            BuildableName = "Box-iOS.framework"
+            BuildableName = "Box.framework"
             BlueprintName = "Box-iOS"
             ReferencedContainer = "container:Box.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F8BB81D21A939B66001AA352"
-            BuildableName = "Box-iOS.framework"
+            BuildableName = "Box.framework"
             BlueprintName = "Box-iOS"
             ReferencedContainer = "container:Box.xcodeproj">
          </BuildableReference>
@@ -94,7 +94,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F8BB81D21A939B66001AA352"
-            BuildableName = "Box-iOS.framework"
+            BuildableName = "Box.framework"
             BlueprintName = "Box-iOS"
             ReferencedContainer = "container:Box.xcodeproj">
          </BuildableReference>

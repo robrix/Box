@@ -223,7 +223,7 @@
 			dependencies = (
 			);
 			name = "Box-iOS";
-			productName = "Box-iOS";
+			productName = "Box";
 			productReference = F8BB81D31A939B66001AA352 /* Box.framework */;
 			productType = "com.apple.product-type.framework";
 		};
