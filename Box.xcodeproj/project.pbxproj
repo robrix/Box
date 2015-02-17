@@ -131,9 +131,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D470AC3619E86128003DA6C6 /* Box */ = {
+		D470AC3619E86128003DA6C6 /* Box-Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D470AC4D19E86128003DA6C6 /* Build configuration list for PBXNativeTarget "Box" */;
+			buildConfigurationList = D470AC4D19E86128003DA6C6 /* Build configuration list for PBXNativeTarget "Box-Mac" */;
 			buildPhases = (
 				D470AC3219E86128003DA6C6 /* Sources */,
 				D470AC3319E86128003DA6C6 /* Frameworks */,
@@ -144,14 +144,14 @@
 			);
 			dependencies = (
 			);
-			name = Box;
+			name = "Box-Mac";
 			productName = Box;
 			productReference = D470AC3719E86128003DA6C6 /* Box.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D470AC4119E86128003DA6C6 /* BoxTests */ = {
+		D470AC4119E86128003DA6C6 /* Box-MacTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D470AC5019E86128003DA6C6 /* Build configuration list for PBXNativeTarget "BoxTests" */;
+			buildConfigurationList = D470AC5019E86128003DA6C6 /* Build configuration list for PBXNativeTarget "Box-MacTests" */;
 			buildPhases = (
 				D470AC3E19E86128003DA6C6 /* Sources */,
 				D470AC3F19E86128003DA6C6 /* Frameworks */,
@@ -162,7 +162,7 @@
 			dependencies = (
 				D470AC4519E86128003DA6C6 /* PBXTargetDependency */,
 			);
-			name = BoxTests;
+			name = "Box-MacTests";
 			productName = BoxTests;
 			productReference = D470AC4219E86128003DA6C6 /* BoxTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -196,8 +196,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D470AC3619E86128003DA6C6 /* Box */,
-				D470AC4119E86128003DA6C6 /* BoxTests */,
+				D470AC3619E86128003DA6C6 /* Box-Mac */,
+				D470AC4119E86128003DA6C6 /* Box-MacTests */,
 			);
 		};
 /* End PBXProject section */
@@ -245,7 +245,7 @@
 /* Begin PBXTargetDependency section */
 		D470AC4519E86128003DA6C6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D470AC3619E86128003DA6C6 /* Box */;
+			target = D470AC3619E86128003DA6C6 /* Box-Mac */;
 			targetProxy = D470AC4419E86128003DA6C6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -345,7 +345,7 @@
 				INFOPLIST_FILE = Box/Info.plist;
 				INSTALL_PATH = "@rpath";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Box;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -364,7 +364,7 @@
 				INFOPLIST_FILE = Box/Info.plist;
 				INSTALL_PATH = "@rpath";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Box;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -413,7 +413,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D470AC4D19E86128003DA6C6 /* Build configuration list for PBXNativeTarget "Box" */ = {
+		D470AC4D19E86128003DA6C6 /* Build configuration list for PBXNativeTarget "Box-Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D470AC4E19E86128003DA6C6 /* Debug */,
@@ -422,7 +422,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D470AC5019E86128003DA6C6 /* Build configuration list for PBXNativeTarget "BoxTests" */ = {
+		D470AC5019E86128003DA6C6 /* Build configuration list for PBXNativeTarget "Box-MacTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D470AC5119E86128003DA6C6 /* Debug */,
