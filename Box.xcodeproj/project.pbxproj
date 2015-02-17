@@ -15,6 +15,14 @@
 		D470AC5A19E868D3003DA6C6 /* MutableBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D470AC5919E868D3003DA6C6 /* MutableBox.swift */; };
 		D470AC5C19E86A2E003DA6C6 /* MutableBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D470AC5B19E86A2E003DA6C6 /* MutableBoxTests.swift */; };
 		D470AC5E19E86B2C003DA6C6 /* BoxTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D470AC5D19E86B2C003DA6C6 /* BoxTypeTests.swift */; };
+		F8BB81DE1A939B67001AA352 /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8BB81D31A939B66001AA352 /* Box.framework */; };
+		F8BB81EC1A939C03001AA352 /* Box.h in Headers */ = {isa = PBXBuildFile; fileRef = D470AC3C19E86128003DA6C6 /* Box.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8BB81ED1A939C09001AA352 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = D470AC5519E861E2003DA6C6 /* Box.swift */; };
+		F8BB81EE1A939C0D001AA352 /* BoxType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D470AC5719E86790003DA6C6 /* BoxType.swift */; };
+		F8BB81EF1A939C0D001AA352 /* MutableBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D470AC5919E868D3003DA6C6 /* MutableBox.swift */; };
+		F8BB81F01A939C1A001AA352 /* BoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D470AC4919E86128003DA6C6 /* BoxTests.swift */; };
+		F8BB81F11A939C1A001AA352 /* BoxTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D470AC5D19E86B2C003DA6C6 /* BoxTypeTests.swift */; };
+		F8BB81F21A939C1A001AA352 /* MutableBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D470AC5B19E86A2E003DA6C6 /* MutableBoxTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +32,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = D470AC3619E86128003DA6C6;
 			remoteInfo = Box;
+		};
+		F8BB81DF1A939B67001AA352 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D470AC2E19E86128003DA6C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8BB81D21A939B66001AA352;
+			remoteInfo = "Box-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -39,6 +54,8 @@
 		D470AC5919E868D3003DA6C6 /* MutableBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableBox.swift; sourceTree = "<group>"; };
 		D470AC5B19E86A2E003DA6C6 /* MutableBoxTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableBoxTests.swift; sourceTree = "<group>"; };
 		D470AC5D19E86B2C003DA6C6 /* BoxTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxTypeTests.swift; sourceTree = "<group>"; };
+		F8BB81D31A939B66001AA352 /* Box.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Box.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8BB81DD1A939B67001AA352 /* Box-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Box-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +71,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				D470AC4319E86128003DA6C6 /* Box.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8BB81CF1A939B66001AA352 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8BB81DA1A939B67001AA352 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8BB81DE1A939B67001AA352 /* Box.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +106,8 @@
 			children = (
 				D470AC3719E86128003DA6C6 /* Box.framework */,
 				D470AC4219E86128003DA6C6 /* BoxTests.xctest */,
+				F8BB81D31A939B66001AA352 /* Box.framework */,
+				F8BB81DD1A939B67001AA352 /* Box-iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +162,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F8BB81D01A939B66001AA352 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8BB81EC1A939C03001AA352 /* Box.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -167,6 +209,42 @@
 			productReference = D470AC4219E86128003DA6C6 /* BoxTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F8BB81D21A939B66001AA352 /* Box-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8BB81E61A939B67001AA352 /* Build configuration list for PBXNativeTarget "Box-iOS" */;
+			buildPhases = (
+				F8BB81CE1A939B66001AA352 /* Sources */,
+				F8BB81CF1A939B66001AA352 /* Frameworks */,
+				F8BB81D01A939B66001AA352 /* Headers */,
+				F8BB81D11A939B66001AA352 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Box-iOS";
+			productName = "Box-iOS";
+			productReference = F8BB81D31A939B66001AA352 /* Box.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F8BB81DC1A939B67001AA352 /* Box-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8BB81E91A939B67001AA352 /* Build configuration list for PBXNativeTarget "Box-iOSTests" */;
+			buildPhases = (
+				F8BB81D91A939B67001AA352 /* Sources */,
+				F8BB81DA1A939B67001AA352 /* Frameworks */,
+				F8BB81DB1A939B67001AA352 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8BB81E01A939B67001AA352 /* PBXTargetDependency */,
+			);
+			name = "Box-iOSTests";
+			productName = "Box-iOSTests";
+			productReference = F8BB81DD1A939B67001AA352 /* Box-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -181,6 +259,12 @@
 					};
 					D470AC4119E86128003DA6C6 = {
 						CreatedOnToolsVersion = 6.1;
+					};
+					F8BB81D21A939B66001AA352 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					F8BB81DC1A939B67001AA352 = {
+						CreatedOnToolsVersion = 6.3;
 					};
 				};
 			};
@@ -198,6 +282,8 @@
 			targets = (
 				D470AC3619E86128003DA6C6 /* Box-Mac */,
 				D470AC4119E86128003DA6C6 /* Box-MacTests */,
+				F8BB81D21A939B66001AA352 /* Box-iOS */,
+				F8BB81DC1A939B67001AA352 /* Box-iOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -211,6 +297,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D470AC4019E86128003DA6C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8BB81D11A939B66001AA352 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8BB81DB1A939B67001AA352 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -240,6 +340,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F8BB81CE1A939B66001AA352 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8BB81ED1A939C09001AA352 /* Box.swift in Sources */,
+				F8BB81EE1A939C0D001AA352 /* BoxType.swift in Sources */,
+				F8BB81EF1A939C0D001AA352 /* MutableBox.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8BB81D91A939B67001AA352 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8BB81F01A939C1A001AA352 /* BoxTests.swift in Sources */,
+				F8BB81F11A939C1A001AA352 /* BoxTypeTests.swift in Sources */,
+				F8BB81F21A939C1A001AA352 /* MutableBoxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -247,6 +367,11 @@
 			isa = PBXTargetDependency;
 			target = D470AC3619E86128003DA6C6 /* Box-Mac */;
 			targetProxy = D470AC4419E86128003DA6C6 /* PBXContainerItemProxy */;
+		};
+		F8BB81E01A939B67001AA352 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8BB81D21A939B66001AA352 /* Box-iOS */;
+			targetProxy = F8BB81DF1A939B67001AA352 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -401,6 +526,90 @@
 			};
 			name = Release;
 		};
+		F8BB81E71A939B67001AA352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Box/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = Box;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8BB81E81A939B67001AA352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Box/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = Box;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8BB81EA1A939B67001AA352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BoxTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F8BB81EB1A939B67001AA352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BoxTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -430,6 +639,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		F8BB81E61A939B67001AA352 /* Build configuration list for PBXNativeTarget "Box-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8BB81E71A939B67001AA352 /* Debug */,
+				F8BB81E81A939B67001AA352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F8BB81E91A939B67001AA352 /* Build configuration list for PBXNativeTarget "Box-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8BB81EA1A939B67001AA352 /* Debug */,
+				F8BB81EB1A939B67001AA352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
