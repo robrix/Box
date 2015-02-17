@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BFB5CF771A5F0C1700EAF7FE /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = D470AC5519E861E2003DA6C6 /* Box.swift */; };
+		BFB5CF781A5F0C1700EAF7FE /* BoxType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D470AC5719E86790003DA6C6 /* BoxType.swift */; };
+		BFB5CF791A5F0C1700EAF7FE /* MutableBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D470AC5919E868D3003DA6C6 /* MutableBox.swift */; };
+		BFB5CF7C1A5F0C1700EAF7FE /* Box.h in Headers */ = {isa = PBXBuildFile; fileRef = D470AC3C19E86128003DA6C6 /* Box.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D470AC3D19E86128003DA6C6 /* Box.h in Headers */ = {isa = PBXBuildFile; fileRef = D470AC3C19E86128003DA6C6 /* Box.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D470AC4319E86128003DA6C6 /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D470AC3719E86128003DA6C6 /* Box.framework */; };
 		D470AC4A19E86128003DA6C6 /* BoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D470AC4919E86128003DA6C6 /* BoxTests.swift */; };
@@ -28,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BFB5CF811A5F0C1700EAF7FE /* Box.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Box.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D470AC3719E86128003DA6C6 /* Box.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Box.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D470AC3B19E86128003DA6C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D470AC3C19E86128003DA6C6 /* Box.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Box.h; sourceTree = "<group>"; };
@@ -42,6 +47,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BFB5CF7A1A5F0C1700EAF7FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D470AC3319E86128003DA6C6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -74,6 +86,7 @@
 			children = (
 				D470AC3719E86128003DA6C6 /* Box.framework */,
 				D470AC4219E86128003DA6C6 /* BoxTests.xctest */,
+				BFB5CF811A5F0C1700EAF7FE /* Box.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,6 +133,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		BFB5CF7B1A5F0C1700EAF7FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFB5CF7C1A5F0C1700EAF7FE /* Box.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D470AC3419E86128003DA6C6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,6 +152,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		BFB5CF751A5F0C1700EAF7FE /* Box-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFB5CF7E1A5F0C1700EAF7FE /* Build configuration list for PBXNativeTarget "Box-iOS" */;
+			buildPhases = (
+				BFB5CF761A5F0C1700EAF7FE /* Sources */,
+				BFB5CF7A1A5F0C1700EAF7FE /* Frameworks */,
+				BFB5CF7B1A5F0C1700EAF7FE /* Headers */,
+				BFB5CF7D1A5F0C1700EAF7FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Box-iOS";
+			productName = Box;
+			productReference = BFB5CF811A5F0C1700EAF7FE /* Box.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		D470AC3619E86128003DA6C6 /* Box */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D470AC4D19E86128003DA6C6 /* Build configuration list for PBXNativeTarget "Box" */;
@@ -198,11 +237,19 @@
 			targets = (
 				D470AC3619E86128003DA6C6 /* Box */,
 				D470AC4119E86128003DA6C6 /* BoxTests */,
+				BFB5CF751A5F0C1700EAF7FE /* Box-iOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BFB5CF7D1A5F0C1700EAF7FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D470AC3519E86128003DA6C6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -220,6 +267,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BFB5CF761A5F0C1700EAF7FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFB5CF771A5F0C1700EAF7FE /* Box.swift in Sources */,
+				BFB5CF781A5F0C1700EAF7FE /* BoxType.swift in Sources */,
+				BFB5CF791A5F0C1700EAF7FE /* MutableBox.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D470AC3219E86128003DA6C6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -251,6 +308,47 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		BFB5CF7F1A5F0C1700EAF7FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Box/Info.plist;
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = Box;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BFB5CF801A5F0C1700EAF7FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Box/Info.plist;
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = Box;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		D470AC4B19E86128003DA6C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -404,6 +502,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BFB5CF7E1A5F0C1700EAF7FE /* Build configuration list for PBXNativeTarget "Box-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFB5CF7F1A5F0C1700EAF7FE /* Debug */,
+				BFB5CF801A5F0C1700EAF7FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D470AC3119E86128003DA6C6 /* Build configuration list for PBXProject "Box" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
