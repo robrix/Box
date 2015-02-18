@@ -46,7 +46,7 @@
 		D470AC3719E86128003DA6C6 /* Box.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Box.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D470AC3B19E86128003DA6C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D470AC3C19E86128003DA6C6 /* Box.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Box.h; sourceTree = "<group>"; };
-		D470AC4219E86128003DA6C6 /* BoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D470AC4219E86128003DA6C6 /* Box-MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Box-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D470AC4819E86128003DA6C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D470AC4919E86128003DA6C6 /* BoxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxTests.swift; sourceTree = "<group>"; };
 		D470AC5519E861E2003DA6C6 /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				D470AC3719E86128003DA6C6 /* Box.framework */,
-				D470AC4219E86128003DA6C6 /* BoxTests.xctest */,
+				D470AC4219E86128003DA6C6 /* Box-MacTests.xctest */,
 				F8BB81D31A939B66001AA352 /* Box.framework */,
 				F8BB81DD1A939B67001AA352 /* Box-iOSTests.xctest */,
 			);
@@ -206,7 +206,7 @@
 			);
 			name = "Box-MacTests";
 			productName = BoxTests;
-			productReference = D470AC4219E86128003DA6C6 /* BoxTests.xctest */;
+			productReference = D470AC4219E86128003DA6C6 /* Box-MacTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		F8BB81D21A939B66001AA352 /* Box-iOS */ = {
@@ -223,7 +223,7 @@
 			dependencies = (
 			);
 			name = "Box-iOS";
-			productName = "Box";
+			productName = Box;
 			productReference = F8BB81D31A939B66001AA352 /* Box.framework */;
 			productType = "com.apple.product-type.framework";
 		};
@@ -647,6 +647,7 @@
 				F8BB81E81A939B67001AA352 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8BB81E91A939B67001AA352 /* Build configuration list for PBXNativeTarget "Box-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -655,6 +656,7 @@
 				F8BB81EB1A939B67001AA352 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
