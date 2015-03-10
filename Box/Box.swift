@@ -9,6 +9,13 @@ public final class Box<T>: BoxType, Printable {
 		self.value = value
 	}
 
+
+	/// Constructs a `Box` with the given `value`.
+	public class func unit(value: T) -> Box<T> {
+		return Box(value)
+	}
+
+
 	/// The (immutable) value wrapped by the receiver.
 	public let value: T
 
