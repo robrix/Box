@@ -8,4 +8,11 @@ class BoxTests: XCTestCase {
 		let box = Box(1)
 		XCTAssertEqual(box.value, 1)
 	}
+
+	func testSequenceType() {
+		let box = Box(1)
+		for value in box {
+			XCTAssertEqual(value, 1)
+		}
+	}
 }

@@ -3,7 +3,7 @@
 /// Wraps a type `T` in a reference type.
 ///
 /// Typically this is used to work around limitations of value types (for example, the lack of codegen for recursive value types and type-parameterized enums with >1 case). It is also useful for sharing a single (presumably large) value without copying it.
-public final class Box<T>: BoxType, Printable {
+public final class Box<T>: BoxType, SequenceType, Printable {
 	/// Initializes a `Box` with the given value.
 	public init(_ value: T) {
 		self.value = value
@@ -24,6 +24,11 @@ public final class Box<T>: BoxType, Printable {
 		return Box<U>(f(value))
 	}
 
+	// MARK: SequnceType
+
+	public func generate() -> GeneratorOfOne<T> {
+		return GeneratorOfOne(value)
+	}
 
 	// MARK: Printable
 
