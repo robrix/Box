@@ -100,6 +100,7 @@
 				D470AC3819E86128003DA6C6 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		D470AC3819E86128003DA6C6 /* Products */ = {
 			isa = PBXGroup;

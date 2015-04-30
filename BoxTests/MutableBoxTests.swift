@@ -14,4 +14,11 @@ class MutableBoxTests: XCTestCase {
 		box.value = 2
 		XCTAssertEqual(box.value, 2)
 	}
+
+	func testSequenceType() {
+		let box = MutableBox(1)
+		for value in box {
+			XCTAssertEqual(value, 1)
+		}
+	}
 }
