@@ -28,6 +28,6 @@ public final class Box<T>: BoxType, Printable {
 	// MARK: Printable
 
 	public var description: String {
-		return toString(value)
+		return String(value)
 	}
 }

@@ -22,6 +22,6 @@ public final class MutableBox<T>: MutableBoxType, Printable {
 	// MARK: Printable
 
 	public var description: String {
-		return toString(value)
+		return String(value)
 	}
 }
